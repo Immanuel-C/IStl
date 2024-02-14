@@ -30,3 +30,15 @@
 *.exe
 *.out
 *.app
+
+# User defined
+bin
+bin-int
+.vs
+.vscode
+*.make
+MakeFile
+*.sln
+*.vcxproj
+*.vcxproj.user
+*.vcxproj.filters

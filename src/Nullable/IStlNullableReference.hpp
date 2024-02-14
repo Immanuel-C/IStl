@@ -15,8 +15,8 @@ namespace IStl {
 	template<typename T>
 	class NullableReference {
 	public:
-		ISTL_CONSTEXPR20 NullableReference(T& ref) : m_ptr{ &ref } {}
-		ISTL_CONSTEXPR20 NullableReference(const Null_T& nullref) : m_ptr{ nullptr } {}
+		ISTL_CONSTEXPR20 NullableReference(T& ref) noexcept : m_ptr{ &ref } {}
+		ISTL_CONSTEXPR20 NullableReference(const Null_T& nullref) noexcept : m_ptr{ nullptr } {}
 
 		/**
 		* @exceptsafe no-throw
@@ -51,8 +51,8 @@ namespace IStl {
 			return *m_ptr;
 		}
 
-		inline ISTL_CONSTEXPR20 void operator=(const Null_T& ref) { Reset(); }
-		inline ISTL_CONSTEXPR20 void operator=(T& ref) { Set(ref); }
+		inline ISTL_CONSTEXPR20 void operator=(const Null_T& ref) noexcept { Reset(); }
+		inline ISTL_CONSTEXPR20 void operator=(T& ref) noexcept { Set(ref); }
 
 		inline ISTL_CONSTEXPR20 void operator=(T&& ref) = delete;
 		NullableReference(T&&) = delete;

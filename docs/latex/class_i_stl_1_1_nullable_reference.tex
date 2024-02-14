@@ -1,0 +1,143 @@
+\doxysection{IStl\+::Nullable\+Reference\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_i_stl_1_1_nullable_reference}{}\label{class_i_stl_1_1_nullable_reference}\index{IStl::NullableReference$<$ T $>$@{IStl::NullableReference$<$ T $>$}}
+
+
+{\ttfamily \#include $<$IStl\+Nullable\+Reference.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{___i_stl_core_8hpp_abb117f3bddf5873c976993bfdfcaa807}{ISTL\+\_\+\+CONSTEXPR20}} \mbox{\hyperlink{class_i_stl_1_1_nullable_reference_a2ed39cc229266ea1846a9da181be8bcc}{Nullable\+Reference}} (T \&ref) noexcept
+\item 
+\mbox{\hyperlink{___i_stl_core_8hpp_abb117f3bddf5873c976993bfdfcaa807}{ISTL\+\_\+\+CONSTEXPR20}} \mbox{\hyperlink{class_i_stl_1_1_nullable_reference_a4d67005445dcf16e4dc0c5f58ea95f43}{Nullable\+Reference}} (const \mbox{\hyperlink{struct_i_stl_1_1_null___t}{Null\+\_\+T}} \&nullref) noexcept
+\item 
+\mbox{\hyperlink{___i_stl_core_8hpp_a6b7fb16eae41df3c83446801280d7a18}{ISTL\+\_\+\+NODISCARD}} const bool \mbox{\hyperlink{class_i_stl_1_1_nullable_reference_a3b8b228f864912d6a6643c8ddb74249a}{Is\+Null}} () const noexcept
+\item 
+\mbox{\hyperlink{___i_stl_core_8hpp_a6b7fb16eae41df3c83446801280d7a18}{ISTL\+\_\+\+NODISCARD}} T \& \mbox{\hyperlink{class_i_stl_1_1_nullable_reference_a1d7cd3b448ca1dafdbda020eebd41cf0}{Get\+Value}} () noexcept
+\item 
+\mbox{\hyperlink{___i_stl_core_8hpp_a6b7fb16eae41df3c83446801280d7a18}{ISTL\+\_\+\+NODISCARD}} T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_i_stl_1_1_nullable_reference_aa9acd5c1d4859960e3fb660f686ef024}{operator-\/$>$}} () noexcept
+\item 
+\mbox{\hyperlink{___i_stl_core_8hpp_a6b7fb16eae41df3c83446801280d7a18}{ISTL\+\_\+\+NODISCARD}} T \& \mbox{\hyperlink{class_i_stl_1_1_nullable_reference_ac484b05a80f2702312b21ef68c2af53d}{operator\texorpdfstring{$\ast$}{*}}} () noexcept
+\item 
+\mbox{\hyperlink{___i_stl_core_8hpp_abb117f3bddf5873c976993bfdfcaa807}{ISTL\+\_\+\+CONSTEXPR20}} void \mbox{\hyperlink{class_i_stl_1_1_nullable_reference_ab89eaf71f4bb246a5df5251ceb37a1a2}{operator=}} (const \mbox{\hyperlink{struct_i_stl_1_1_null___t}{Null\+\_\+T}} \&ref) noexcept
+\item 
+\mbox{\hyperlink{___i_stl_core_8hpp_abb117f3bddf5873c976993bfdfcaa807}{ISTL\+\_\+\+CONSTEXPR20}} void \mbox{\hyperlink{class_i_stl_1_1_nullable_reference_afd4af09f82ea04cfbd6628efd0b3b817}{operator=}} (T \&ref) noexcept
+\item 
+\mbox{\hyperlink{___i_stl_core_8hpp_abb117f3bddf5873c976993bfdfcaa807}{ISTL\+\_\+\+CONSTEXPR20}} void \mbox{\hyperlink{class_i_stl_1_1_nullable_reference_a071e932d298bbfbe685a87ea5519dbc7}{operator=}} (T \&\&ref)=delete
+\begin{DoxyCompactList}\small\item\em Deleted. Use \doxylink{class_i_stl_1_1_nullable}{IStl\+::\+Nullable}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_i_stl_1_1_nullable_reference_a922fe09daec9f8f7e47a92e5566167d3}{Nullable\+Reference}} (T \&\&)=delete
+\begin{DoxyCompactList}\small\item\em Deleted. Use \doxylink{class_i_stl_1_1_nullable}{IStl\+::\+Nullable}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class IStl\+::\+Nullable\+Reference$<$ T $>$}
+A non-\/owning class that allows any reference to be set to \doxylink{namespace_i_stl_aa8fcbc7e3a2e7b27ded0d7c2d39ec83d}{IStl\+::null}.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & the type of data this class holds. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_i_stl_1_1_nullable_reference_a2ed39cc229266ea1846a9da181be8bcc}\label{class_i_stl_1_1_nullable_reference_a2ed39cc229266ea1846a9da181be8bcc} 
+\index{IStl::NullableReference$<$ T $>$@{IStl::NullableReference$<$ T $>$}!NullableReference@{NullableReference}}
+\index{NullableReference@{NullableReference}!IStl::NullableReference$<$ T $>$@{IStl::NullableReference$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{NullableReference()}{NullableReference()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{___i_stl_core_8hpp_abb117f3bddf5873c976993bfdfcaa807}{ISTL\+\_\+\+CONSTEXPR20}} \mbox{\hyperlink{class_i_stl_1_1_nullable_reference}{IStl\+::\+Nullable\+Reference}}$<$ T $>$\+::\+Nullable\+Reference (\begin{DoxyParamCaption}\item[{T \&}]{ref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Constructs the class with value. \Hypertarget{class_i_stl_1_1_nullable_reference_a4d67005445dcf16e4dc0c5f58ea95f43}\label{class_i_stl_1_1_nullable_reference_a4d67005445dcf16e4dc0c5f58ea95f43} 
+\index{IStl::NullableReference$<$ T $>$@{IStl::NullableReference$<$ T $>$}!NullableReference@{NullableReference}}
+\index{NullableReference@{NullableReference}!IStl::NullableReference$<$ T $>$@{IStl::NullableReference$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{NullableReference()}{NullableReference()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{___i_stl_core_8hpp_abb117f3bddf5873c976993bfdfcaa807}{ISTL\+\_\+\+CONSTEXPR20}} \mbox{\hyperlink{class_i_stl_1_1_nullable_reference}{IStl\+::\+Nullable\+Reference}}$<$ T $>$\+::\+Nullable\+Reference (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_i_stl_1_1_null___t}{Null\+\_\+T}} \&}]{nullref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+Constructs the class with no value. \Hypertarget{class_i_stl_1_1_nullable_reference_a922fe09daec9f8f7e47a92e5566167d3}\label{class_i_stl_1_1_nullable_reference_a922fe09daec9f8f7e47a92e5566167d3} 
+\index{IStl::NullableReference$<$ T $>$@{IStl::NullableReference$<$ T $>$}!NullableReference@{NullableReference}}
+\index{NullableReference@{NullableReference}!IStl::NullableReference$<$ T $>$@{IStl::NullableReference$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{NullableReference()}{NullableReference()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{class_i_stl_1_1_nullable_reference}{IStl\+::\+Nullable\+Reference}}$<$ T $>$\+::\+Nullable\+Reference (\begin{DoxyParamCaption}\item[{T \&\&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Deleted. Use \doxylink{class_i_stl_1_1_nullable}{IStl\+::\+Nullable}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_i_stl_1_1_nullable_reference_a1d7cd3b448ca1dafdbda020eebd41cf0}\label{class_i_stl_1_1_nullable_reference_a1d7cd3b448ca1dafdbda020eebd41cf0} 
+\index{IStl::NullableReference$<$ T $>$@{IStl::NullableReference$<$ T $>$}!GetValue@{GetValue}}
+\index{GetValue@{GetValue}!IStl::NullableReference$<$ T $>$@{IStl::NullableReference$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{GetValue()}{GetValue()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{___i_stl_core_8hpp_a6b7fb16eae41df3c83446801280d7a18}{ISTL\+\_\+\+NODISCARD}} T \& \mbox{\hyperlink{class_i_stl_1_1_nullable_reference}{IStl\+::\+Nullable\+Reference}}$<$ T $>$\+::\+Get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+a reference to the value. Fails if no value is available. 
+\end{DoxyReturn}
+\Hypertarget{class_i_stl_1_1_nullable_reference_a3b8b228f864912d6a6643c8ddb74249a}\label{class_i_stl_1_1_nullable_reference_a3b8b228f864912d6a6643c8ddb74249a} 
+\index{IStl::NullableReference$<$ T $>$@{IStl::NullableReference$<$ T $>$}!IsNull@{IsNull}}
+\index{IsNull@{IsNull}!IStl::NullableReference$<$ T $>$@{IStl::NullableReference$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{IsNull()}{IsNull()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{___i_stl_core_8hpp_a6b7fb16eae41df3c83446801280d7a18}{ISTL\+\_\+\+NODISCARD}} const bool \mbox{\hyperlink{class_i_stl_1_1_nullable_reference}{IStl\+::\+Nullable\+Reference}}$<$ T $>$\+::\+Is\+Null (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+true if the class contains a valid reference, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_i_stl_1_1_nullable_reference_ac484b05a80f2702312b21ef68c2af53d}\label{class_i_stl_1_1_nullable_reference_ac484b05a80f2702312b21ef68c2af53d} 
+\index{IStl::NullableReference$<$ T $>$@{IStl::NullableReference$<$ T $>$}!operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}}
+\index{operator\texorpdfstring{$\ast$}{*}@{operator\texorpdfstring{$\ast$}{*}}!IStl::NullableReference$<$ T $>$@{IStl::NullableReference$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator\texorpdfstring{$\ast$}{*}()}{operator*()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{___i_stl_core_8hpp_a6b7fb16eae41df3c83446801280d7a18}{ISTL\+\_\+\+NODISCARD}} T \& \mbox{\hyperlink{class_i_stl_1_1_nullable_reference}{IStl\+::\+Nullable\+Reference}}$<$ T $>$\+::operator\texorpdfstring{$\ast$}{*} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+a reference to the value. Fails if no value is available. 
+\end{DoxyReturn}
+\Hypertarget{class_i_stl_1_1_nullable_reference_aa9acd5c1d4859960e3fb660f686ef024}\label{class_i_stl_1_1_nullable_reference_aa9acd5c1d4859960e3fb660f686ef024} 
+\index{IStl::NullableReference$<$ T $>$@{IStl::NullableReference$<$ T $>$}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!IStl::NullableReference$<$ T $>$@{IStl::NullableReference$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{___i_stl_core_8hpp_a6b7fb16eae41df3c83446801280d7a18}{ISTL\+\_\+\+NODISCARD}} T \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_i_stl_1_1_nullable_reference}{IStl\+::\+Nullable\+Reference}}$<$ T $>$\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [noexcept]}}
+
+\begin{DoxyReturn}{Returns}
+a pointer to the value. Fails if no value is available. 
+\end{DoxyReturn}
+\Hypertarget{class_i_stl_1_1_nullable_reference_ab89eaf71f4bb246a5df5251ceb37a1a2}\label{class_i_stl_1_1_nullable_reference_ab89eaf71f4bb246a5df5251ceb37a1a2} 
+\index{IStl::NullableReference$<$ T $>$@{IStl::NullableReference$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!IStl::NullableReference$<$ T $>$@{IStl::NullableReference$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{___i_stl_core_8hpp_abb117f3bddf5873c976993bfdfcaa807}{ISTL\+\_\+\+CONSTEXPR20}} void \mbox{\hyperlink{class_i_stl_1_1_nullable_reference}{IStl\+::\+Nullable\+Reference}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_i_stl_1_1_null___t}{Null\+\_\+T}} \&}]{ref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+\Hypertarget{class_i_stl_1_1_nullable_reference_a071e932d298bbfbe685a87ea5519dbc7}\label{class_i_stl_1_1_nullable_reference_a071e932d298bbfbe685a87ea5519dbc7} 
+\index{IStl::NullableReference$<$ T $>$@{IStl::NullableReference$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!IStl::NullableReference$<$ T $>$@{IStl::NullableReference$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{___i_stl_core_8hpp_abb117f3bddf5873c976993bfdfcaa807}{ISTL\+\_\+\+CONSTEXPR20}} void \mbox{\hyperlink{class_i_stl_1_1_nullable_reference}{IStl\+::\+Nullable\+Reference}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{T \&\&}]{ref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+Deleted. Use \doxylink{class_i_stl_1_1_nullable}{IStl\+::\+Nullable}. 
+
+\Hypertarget{class_i_stl_1_1_nullable_reference_afd4af09f82ea04cfbd6628efd0b3b817}\label{class_i_stl_1_1_nullable_reference_afd4af09f82ea04cfbd6628efd0b3b817} 
+\index{IStl::NullableReference$<$ T $>$@{IStl::NullableReference$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!IStl::NullableReference$<$ T $>$@{IStl::NullableReference$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{___i_stl_core_8hpp_abb117f3bddf5873c976993bfdfcaa807}{ISTL\+\_\+\+CONSTEXPR20}} void \mbox{\hyperlink{class_i_stl_1_1_nullable_reference}{IStl\+::\+Nullable\+Reference}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{T \&}]{ref }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [noexcept]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Immu/\+Documents/\+IStl/src/nullable/\mbox{\hyperlink{_i_stl_nullable_reference_8hpp}{IStl\+Nullable\+Reference.\+hpp}}\item 
+C\+:/\+Users/\+Immu/\+Documents/\+IStl/src/nullable/inline\+Definition/\mbox{\hyperlink{_i_stl_nullable_reference_8inl}{IStl\+Nullable\+Reference.\+inl}}\end{DoxyCompactItemize}

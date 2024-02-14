@@ -1,0 +1,41 @@
+\doxysection{IStl\+Nullable\+Reference.\+hpp}
+\hypertarget{_i_stl_nullable_reference_8hpp_source}{}\label{_i_stl_nullable_reference_8hpp_source}\index{C:/Users/Immu/Documents/IStl/src/nullable/IStlNullableReference.hpp@{C:/Users/Immu/Documents/IStl/src/nullable/IStlNullableReference.hpp}}
+\mbox{\hyperlink{_i_stl_nullable_reference_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_i_stl_nullable_8hpp}{IStlNullable.hpp}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{___i_stl_core_8hpp}{../\_IStlCore.hpp}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_i_stl}{IStl}}\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_i_stl_1_1_nullable_reference}{NullableReference}}\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{___i_stl_core_8hpp_abb117f3bddf5873c976993bfdfcaa807}{ISTL\_CONSTEXPR20}}\ \mbox{\hyperlink{class_i_stl_1_1_nullable_reference_a2ed39cc229266ea1846a9da181be8bcc}{NullableReference}}(T\&\ ref)\ noexcept\ :\ m\_ptr\{\ \&ref\ \}\ \{\}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{___i_stl_core_8hpp_abb117f3bddf5873c976993bfdfcaa807}{ISTL\_CONSTEXPR20}}\ \mbox{\hyperlink{class_i_stl_1_1_nullable_reference_a4d67005445dcf16e4dc0c5f58ea95f43}{NullableReference}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_i_stl_1_1_null___t}{Null\_T}}\&\ nullref)\ noexcept\ :\ m\_ptr\{\ \textcolor{keyword}{nullptr}\ \}\ \{\}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{___i_stl_core_8hpp_a6b7fb16eae41df3c83446801280d7a18}{ISTL\_NODISCARD}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_i_stl_1_1_nullable_reference_a3b8b228f864912d6a6643c8ddb74249a}{IsNull}}()\ const\ noexcept;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{___i_stl_core_8hpp_a6b7fb16eae41df3c83446801280d7a18}{ISTL\_NODISCARD}}\ T\&\ \mbox{\hyperlink{class_i_stl_1_1_nullable_reference_a1d7cd3b448ca1dafdbda020eebd41cf0}{GetValue}}()\ noexcept;}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{___i_stl_core_8hpp_a6b7fb16eae41df3c83446801280d7a18}{ISTL\_NODISCARD}}\ T*\ operator-\/>()\ noexcept;}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{___i_stl_core_8hpp_a6b7fb16eae41df3c83446801280d7a18}{ISTL\_NODISCARD}}\ T\&\ operator*()\ noexcept;}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{___i_stl_core_8hpp_abb117f3bddf5873c976993bfdfcaa807}{ISTL\_CONSTEXPR20}}\ \textcolor{keywordtype}{void}\ operator=(const\ Null\_T\&\ ref)\ noexcept;}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{___i_stl_core_8hpp_abb117f3bddf5873c976993bfdfcaa807}{ISTL\_CONSTEXPR20}}\ \textcolor{keywordtype}{void}\ operator=(T\&\ ref)\ noexcept;}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{___i_stl_core_8hpp_abb117f3bddf5873c976993bfdfcaa807}{ISTL\_CONSTEXPR20}}\ \textcolor{keywordtype}{void}\ operator=(T\&\&\ ref)\ =\ delete;}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_stl_1_1_nullable_reference}{NullableReference}}(T\&\&)\ =\ delete;}
+\DoxyCodeLine{00052\ \ \ \ \ private:}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ T*\ m\_ptr;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ inline\ \textcolor{keywordtype}{void}\ Reset();}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ inline\ \textcolor{keywordtype}{void}\ Set(T\&\ ptr);}
+\DoxyCodeLine{00057\ \ \ \ \ \};}
+\DoxyCodeLine{00058\ \}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#include\ "{}inlineDefinition/IStlNullableReference.inl"{}}}
+
+\end{DoxyCode}

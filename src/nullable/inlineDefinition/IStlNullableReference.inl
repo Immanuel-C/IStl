@@ -1,6 +1,6 @@
 #pragma once
 
-/// Include in IStlNullableReference.hpp
+// Include in IStlNullableReference.hpp
 
 namespace IStl {
 	template<typename T>

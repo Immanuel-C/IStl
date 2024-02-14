@@ -1,0 +1,45 @@
+\doxysection{IStl\+Nullable\+Type.\+hpp}
+\hypertarget{_i_stl_nullable_type_8hpp_source}{}\label{_i_stl_nullable_type_8hpp_source}\index{C:/Users/Immu/Documents/IStl/src/nullable/IStlNullableType.hpp@{C:/Users/Immu/Documents/IStl/src/nullable/IStlNullableType.hpp}}
+\mbox{\hyperlink{_i_stl_nullable_type_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{___i_stl_core_8hpp}{../\_IStlCore.hpp}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_i_stl_nullable_8hpp}{IStlNullable.hpp}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <type\_traits>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_i_stl}{IStl}}\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_i_stl_1_1_nullable}{Nullable}}\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{___i_stl_core_8hpp_abb117f3bddf5873c976993bfdfcaa807}{ISTL\_CONSTEXPR20}}\ \mbox{\hyperlink{class_i_stl_1_1_nullable_a4212e5fc1528915a4ff7d6cd7bb77950}{Nullable}}(T\ val)\ noexcept\ :\ m\_val\{\ val\ \},\ m\_hasValue\{\ \textcolor{keyword}{true}\ \}\ \{\}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{___i_stl_core_8hpp_abb117f3bddf5873c976993bfdfcaa807}{ISTL\_CONSTEXPR20}}\ \mbox{\hyperlink{class_i_stl_1_1_nullable_a85afaac717eb7f41047c085d37e94ebe}{Nullable}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_i_stl_1_1_null___t}{Null\_T}}\&\ \mbox{\hyperlink{namespace_i_stl_aa8fcbc7e3a2e7b27ded0d7c2d39ec83d}{null}})\ noexcept\ :\ m\_hasValue\{\ \textcolor{keyword}{false}\ \}\ \{\}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{___i_stl_core_8hpp_a6b7fb16eae41df3c83446801280d7a18}{ISTL\_NODISCARD}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_i_stl_1_1_nullable_af688893f4b334a47028bd9f99027b076}{IsNull}}()\ const\ noexcept;}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{___i_stl_core_8hpp_a6b7fb16eae41df3c83446801280d7a18}{ISTL\_NODISCARD}}\ T\&\ \mbox{\hyperlink{class_i_stl_1_1_nullable_a8215a3e6fb122858bffa9c2fa11a5ec8}{GetValue}}()\ noexcept;}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{___i_stl_core_8hpp_a6b7fb16eae41df3c83446801280d7a18}{ISTL\_NODISCARD}}\ T*\ operator-\/>()\ noexcept;}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{___i_stl_core_8hpp_a6b7fb16eae41df3c83446801280d7a18}{ISTL\_NODISCARD}}\ T\&\ operator*()\ noexcept;}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{___i_stl_core_8hpp_abb117f3bddf5873c976993bfdfcaa807}{ISTL\_CONSTEXPR20}}\ \textcolor{keywordtype}{void}\ operator=(const\ Null\_T\&\ ref)\ noexcept;}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{___i_stl_core_8hpp_abb117f3bddf5873c976993bfdfcaa807}{ISTL\_CONSTEXPR20}}\ \textcolor{keywordtype}{void}\ operator=(T\ ref)\ noexcept;}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_i_stl_1_1_nullable}{Nullable}}(T\&)\ =\ delete;}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{___i_stl_core_8hpp_abb117f3bddf5873c976993bfdfcaa807}{ISTL\_CONSTEXPR20}}\ \textcolor{keywordtype}{void}\ operator=(T\&)\ =\ delete;}
+\DoxyCodeLine{00057\ \ \ \ \ private:}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ T\ m\_val;}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_hasValue;}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ Reset();}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ Set(T\ val);}
+\DoxyCodeLine{00063\ \ \ \ \ \};}
+\DoxyCodeLine{00064\ \}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#include\ "{}inlineDefinition/IStlNullableType.inl"{}}}
+
+\end{DoxyCode}

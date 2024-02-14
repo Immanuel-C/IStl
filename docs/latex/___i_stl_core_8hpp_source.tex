@@ -1,0 +1,30 @@
+\doxysection{\+\_\+\+IStl\+Core.\+hpp}
+\hypertarget{___i_stl_core_8hpp_source}{}\label{___i_stl_core_8hpp_source}\index{C:/Users/Immu/Documents/IStl/src/\_IStlCore.hpp@{C:/Users/Immu/Documents/IStl/src/\_IStlCore.hpp}}
+\mbox{\hyperlink{___i_stl_core_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <cassert>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#if\ ISTL\_CXX\_VERSION\ >=\ ISTL\_CXX17}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\ \ \ \ \#define\ ISTL\_NODISCARD\ [[nodiscard]]}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#else\ }\textcolor{comment}{//\ ISTL\_CXX\_VERSION\ >=\ ISTL\_CXX17\ }}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\ \ \ \ \#define\ ISTL\_NODISCARD\ }}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ISTL\_CXX\_VERSION\ >=\ ISTL\_CXX17}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#if\ ISTL\_CXX\_VERSION\ >=\ ISTL\_CXX11}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \#define\ ISTL\_NORETURN\ [[noreturn]]\ }}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#else\ }\textcolor{comment}{//\ ISTL\_CXX\_VERSION\ >=\ ISTL\_CXX11}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\ \ \ \ \#define\ ISTL\_NORETURN\ }}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ISTL\_CXX\_VERSION\ >=\ ISTL\_CXX11}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#ifdef\ ISTL\_CXX\_VERSION\ >=\ ISTL\_CXX20}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\ \ \ \ \#define\ ISTL\_CONSTEXPR20\ constexpr}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#else\ }\textcolor{comment}{//\ ISTL\_CXX\_VERSION\ >=\ ISTL\_CXX20}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\ \ \ \ \#define\ ISTL\_CONSTEXPR20\ const}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ISTL\_CXX\_VERSION\ >=\ ISTL\_CXX20}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ ISTL\_ASSERT(condition,\ msg)\ assert((condition)\ \&\&\ msg)}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#define\ ISTL\_STATIC\_ASSERT(condition,\ msg)\ static\_assert((condition),\ msg)}}
+
+\end{DoxyCode}

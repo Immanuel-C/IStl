@@ -1,6 +1,6 @@
 #pragma once
 
-/// Include in IStlNullableType.hpp
+// Include in IStlNullableType.hpp
 
 namespace IStl {
 	template<typename T>
@@ -28,7 +28,7 @@ namespace IStl {
 	ISTL_CONSTEXPR20 void Nullable<T>::operator=(const Null_T& ref) noexcept { Reset(); }
 
 	template<typename T>
-	ISTL_CONSTEXPR20 void Nullable<T>::operator=(T ref) { Set(ref); }
+	ISTL_CONSTEXPR20 void Nullable<T>::operator=(T ref) noexcept { Set(ref); }
 
 
 	template<typename T>

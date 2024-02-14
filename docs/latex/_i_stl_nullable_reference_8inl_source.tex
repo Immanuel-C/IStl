@@ -1,0 +1,48 @@
+\doxysection{IStl\+Nullable\+Reference.\+inl}
+\hypertarget{_i_stl_nullable_reference_8inl_source}{}\label{_i_stl_nullable_reference_8inl_source}\index{C:/Users/Immu/Documents/IStl/src/nullable/inlineDefinition/IStlNullableReference.inl@{C:/Users/Immu/Documents/IStl/src/nullable/inlineDefinition/IStlNullableReference.inl}}
+\mbox{\hyperlink{_i_stl_nullable_reference_8inl}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ Include\ in\ IStlNullableReference.hpp}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_i_stl}{IStl}}\ \{}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00007\ \ \ \ \ \mbox{\hyperlink{___i_stl_core_8hpp_a6b7fb16eae41df3c83446801280d7a18}{ISTL\_NODISCARD}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_i_stl_1_1_nullable_reference_a3b8b228f864912d6a6643c8ddb74249a}{NullableReference<T>::IsNull}}()\ const\ noexcept\ \{\ \textcolor{keywordflow}{return}\ m\_ptr\ ==\ \textcolor{keyword}{nullptr};\ \}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{___i_stl_core_8hpp_a6b7fb16eae41df3c83446801280d7a18}{ISTL\_NODISCARD}}\ T\&\ \mbox{\hyperlink{class_i_stl_1_1_nullable_reference_a1d7cd3b448ca1dafdbda020eebd41cf0}{NullableReference<T>::GetValue}}()\ noexcept\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{___i_stl_core_8hpp_adb0bf880c1cf66e8c557db780c146c67}{ISTL\_ASSERT}}(m\_ptr\ !=\ \textcolor{keyword}{nullptr},\ \textcolor{stringliteral}{"{}IRun::NullableReference\ must\ have\ value\ to\ get\ value!"{}});}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *m\_ptr;}
+\DoxyCodeLine{00013\ \ \ \ \ \}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{___i_stl_core_8hpp_a6b7fb16eae41df3c83446801280d7a18}{ISTL\_NODISCARD}}\ T*\ \mbox{\hyperlink{class_i_stl_1_1_nullable_reference_aa9acd5c1d4859960e3fb660f686ef024}{NullableReference<T>::operator-\/>}}()\ noexcept\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{___i_stl_core_8hpp_adb0bf880c1cf66e8c557db780c146c67}{ISTL\_ASSERT}}(m\_ptr\ !=\ \textcolor{keyword}{nullptr},\ \textcolor{stringliteral}{"{}IRun::NullableReference\ must\ have\ value\ to\ get\ value!"{}});}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_ptr;}
+\DoxyCodeLine{00019\ \ \ \ \ \}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{___i_stl_core_8hpp_a6b7fb16eae41df3c83446801280d7a18}{ISTL\_NODISCARD}}\ T\&\ \mbox{\hyperlink{class_i_stl_1_1_nullable_reference_ac484b05a80f2702312b21ef68c2af53d}{NullableReference<T>::operator*}}()\ noexcept\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{___i_stl_core_8hpp_adb0bf880c1cf66e8c557db780c146c67}{ISTL\_ASSERT}}(m\_ptr\ !=\ \textcolor{keyword}{nullptr},\ \textcolor{stringliteral}{"{}IRun::NullableReference\ must\ have\ value\ to\ get\ value!"{}});}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *m\_ptr;}
+\DoxyCodeLine{00025\ \ \ \ \ \}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{___i_stl_core_8hpp_abb117f3bddf5873c976993bfdfcaa807}{ISTL\_CONSTEXPR20}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_i_stl_1_1_nullable_reference_ab89eaf71f4bb246a5df5251ceb37a1a2}{NullableReference<T>::operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_i_stl_1_1_null___t}{Null\_T}}\&\ ref)\ \textcolor{keyword}{noexcept}\ \{\ Reset();\ \}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{___i_stl_core_8hpp_abb117f3bddf5873c976993bfdfcaa807}{ISTL\_CONSTEXPR20}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_i_stl_1_1_nullable_reference_ab89eaf71f4bb246a5df5251ceb37a1a2}{NullableReference<T>::operator=}}(T\&\ ref)\ \textcolor{keyword}{noexcept}\ \{\ Set(ref);\ \}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_i_stl_1_1_nullable_reference}{NullableReference<T>::Reset}}()\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ m\_ptr\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00036\ \ \ \ \ \}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{template}<\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ NullableReference<T>::Set(T\&\ ptr)\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ m\_ptr\ =\ \&ptr;}
+\DoxyCodeLine{00041\ \ \ \ \ \}}
+\DoxyCodeLine{00042\ \}}
+
+\end{DoxyCode}

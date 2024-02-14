@@ -3,9 +3,6 @@
 #include "IStlNullable.hpp"
 #include "../_IStlCore.hpp"
 
-#include <type_traits>
-
-
 namespace IStl {
 	/**
 	* A non-owning class that allows any reference to be set to IStl::null.
@@ -22,49 +19,36 @@ namespace IStl {
 		* @exceptsafe no-throw
 		* @returns true if the class contains a valid reference, false otherwise.
 		*/
-		inline ISTL_NODISCARD const bool IsNull() const noexcept { return m_ptr == nullptr; }
+		ISTL_NODISCARD const bool IsNull() const noexcept;
 
 		/**
 		* @exceptsafe no-throw
 		* @returns a reference to the value. Fails if no value is available.
 		*/
-		inline ISTL_NODISCARD T& GetValue() noexcept {
-			ISTL_ASSERT(m_ptr != nullptr, "IRun::NullableReference must have value to get value!");
-			return *m_ptr;
-		}
+		ISTL_NODISCARD T& GetValue() noexcept;
 
 		/**
 		* @exceptsafe no-throw
 		* @returns a pointer to the value. Fails if no value is available.
 		*/
-		inline ISTL_NODISCARD T* operator->() noexcept {
-			ISTL_ASSERT(m_ptr != nullptr , "IRun::NullableReference must have value to get value!");
-			return m_ptr;
-		}
-
+		ISTL_NODISCARD T* operator->() noexcept;
 		/**
 		* @exceptsafe no-throw
 		* @returns a reference to the value. Fails if no value is available.
 		*/
-		inline ISTL_NODISCARD T& operator*() noexcept {
-			ISTL_ASSERT(m_ptr != nullptr, "IRun::NullableReference must have value to get value!");
-			return *m_ptr;
-		}
+		ISTL_NODISCARD T& operator*() noexcept;
 
-		inline ISTL_CONSTEXPR20 void operator=(const Null_T& ref) noexcept { Reset(); }
-		inline ISTL_CONSTEXPR20 void operator=(T& ref) noexcept { Set(ref); }
+		ISTL_CONSTEXPR20 void operator=(const Null_T& ref) noexcept;
+		ISTL_CONSTEXPR20 void operator=(T& ref) noexcept;
 
-		inline ISTL_CONSTEXPR20 void operator=(T&& ref) = delete;
+		ISTL_CONSTEXPR20 void operator=(T&& ref) = delete;
 		NullableReference(T&&) = delete;
 	private:
 		T* m_ptr;
 
-		inline void Reset() {
-			m_ptr = nullptr;
-		}
-
-		inline void Set(T& ptr) {
-			m_ptr = &ptr;
-		}
+		inline void Reset();
+		inline void Set(T& ptr);
 	};
 }
+
+#include "inlineDefinition/IStlNullableReference.inl"

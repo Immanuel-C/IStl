@@ -1,7 +1,7 @@
 #include "TestNullable.h"
 
-#include <Nullable/IStlNullableReference.hpp>
-#include <Nullable/IStlNullableType.hpp>
+#include <nullable/IStlNullableReference.hpp>
+#include <nullable/IStlNullableType.hpp>
 #include <iostream>
 #include <optional>
 
